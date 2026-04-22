@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tadee Hotel & Suites</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+</head>
+<body>
+    <section class="bg-[#FEF7F2] min-h-screen relative">
+        <!-- nav -->
+        <div class="flex items-center justify-between  p-5 lg:ml-[2rem] lg:mr-[2rem] ">
+        <!-- logo -->
+        <div class="w-[8rem]">
+            <img src="/assests/icons/logo.png" alt="funiture Logo">
+        </div>
+
+        <!-- navigation -->
+        <nav class="space-x-6 font-sm text-[#2B1B12] font-bold hidden md:flex ">
+            <a href="#" class=" p-1 hover:animate-pulse duration-500 transition-all">
+                Home
+            </a>
+            <a href="#" class="p-1 hover:animate-pulse duration-500 transition-all">
+                Services
+            </a>
+            <a href="#" class="p-1 hover:animate-pulse duration-500 transition-all">
+                Agents
+            </a>
+            <a href="#" class="p-1 hover:animate-pulse duration-500 transition-all">
+                Contact
+            </a>
+        </nav>
+
+        <!-- sign in/login -->
+        <div class="flex justify-center items-center space-x-5">
+
+            <button class="hover:scale-105"><img src="assests/icons/search.png" alt="" class="h-4 w-4"></button>
+
+            <button class="hover:scale-105"><img src="assests/icons/user.png" alt=""  class="h-4 w-4"></button>
+
+        <div class="flex md:flex-col lg:flex-row justify-center items-center gap-1">
+            <div class="bg-[#2B1B12] px-6 py-2 text-[#FFFFFF] rounded-xl text-sm shadow-lg hover:text-[#808080] hover:bg-[#EEF2FD] hover:font-bold transition hidden md:block">
+                <a href="./form/signin.html">
+                    Sign up 
+                </a>
+            </div>
+
+            <div class="bg-[#2B1B12] px-6 py-2 text-[#FFFFFF] rounded-xl text-sm shadow-lg hover:text-[#808080] hover:bg-[#EEF2FD] hover:font-bold transition hidden md:block">
+                <a href="./form/login.html">
+                    Login in
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <!-- for small screen -->
+        <div class="group relative lg:hidden md:hidden block">
+                    <button class="bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">☰ Menu</button>
+                    <div class="hidden group-hover:block absolute bg-[#DDC7BB] shadow-lg p-2 w-40 rounded-xl ml-[-5rem] z-50 space-y-1">
+                        <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Home</a>
+                        <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Services </a>
+                        <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Agents</a>
+                        <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Contact </a>
+                        <a href="./form/signin.html" class="block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Sign up</a>         
+                        <a href="./form/login.html" class="block p-2  bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Login </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 md:gap-10 items-center px-8 lg:px-24 py-[7rem] lg:py-2">
+
+    <div class="space-y-3 order-2 lg:order-1">
+            <h1 class="text-5xl font-extrabold text-[#2D1B14] leading-tight">
+                Find Your <br> Dream Home
+            </h1>
+            
+            <p class="text-[#2D1B14]/70 text-lg max-w-md leading-relaxed font-medium">
+                Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision
+            </p>
+            
+            <a href="./form/signin.html">
+                <button class="bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">
+                    Sign up
+                </button>
+            </a>
+        </div>
+
+        <div class="relative order-1 lg:order-2">
+            <img src="assests/images/heroimage1.png" alt="Modern Villa" class="w-[60rem] h-auto drop-shadow-2xl">
+            
+            </div>
+
+    </div>
+
+
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 p-8 rounded-2xl absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20 bg-[#DDC7BB] w-[90%] max-w-6xl">
+
+    <!-- div 1 -->
+    <button class="flex items-center justify-between space-x-5 text-[#695346] bg-[#FBF5F1] p-3 rounded-xl w-full">
+        <div>
+            <p class="text-sm text-[#695346] leading-tight">Location</p>
+        </div>
+        <i class="fa-solid fa-location-dot text-[#695346]"></i>
+    </button>
+
+    <!-- div 2 -->
+    <button class="flex items-center justify-between space-x-5 text-[#695346] bg-[#FBF5F1] p-3 rounded-xl w-full">
+        <div>
+            <p class="text-sm text-[#695346] leading-tight">Type</p>
+        </div>
+        <i class="fa-solid fa-house text-[#695346]"></i>
+    </button>
+
+    <!-- div 3 -->
+    <button class="flex items-center justify-between space-x-5 text-[#695346] bg-[#FBF5F1] p-3 rounded-xl w-full">
+        <div>
+            <p class="text-sm text-[#695346] leading-tight">Price</p>
+        </div>
+        <i class="fa-solid fa-coins text-[#695346]"></i>
+    </button>
+
+    <!-- Sign up button -->
+    <a href="./form/signin.html">
+        <button class="bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
+            Sign up
+        </button>
+    </a>
+
+</div>
+    </section>
+
+    <!-- section2 -->
+    <section class="px-10 md:px-20 py-10 md:py-20 mt-[5rem] mx-auto grid lg:grid-cols-2 justify-center items-center gap-4 md:gap-12">
+        <div class="max-w-4xl">
+            <img src="assests/images/section2.png" alt="" class="w-[50rem] h-auto object-contain">
+        </div>
+
+        <div class="space-y-10 ">
+            <h2 class="text-4xl font-extrabold text-[#2B1B12] tracking-wide">
+                We Help You To Find Your Dream Home
+            </h2>
+
+            <p class="text-sm font-semibold text-[#4F3527] tracking-wide leading-[25px]">
+                From cozy cottages to luxurious estates, our <br>
+                dedicated team guides you through every step of the <br>
+                journey, ensuring your dream home becomes a reality
+            </p>
+
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="font-bold text-4xl text-[#4F3527]">8K+</h2>
+                    <p class="text-[#4F3527] text-sm font-semibold">Houses Available</p>
+                </div>
+                <div>
+                    <h2 class="font-bold text-4xl text-[#4F3527]">6K+</h2>
+                    <p class="text-[#4F3527] text-sm font-semibold">Houses Sold</p>
+                </div>
+                <div>
+                    <h2 class="font-bold text-4xl text-[#4F3527]">2K+</h2>
+                    <p class="text-[#4F3527] text-sm font-semibold">Trusted Agents</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 3 -->
+    <section class="px-5 md:px-20 py-10 md:py-15">
+
+        <div class="flex flex-col justify-center items-center space-y-2 mb-5">
+            <h2 class="text-4xl text-[#2B1B12] font-extrabold tracking-wide">Why Choose Us</h2>
+            <p class="text-center text-sm text-[#4F3527] font-medium ">
+                Elevating Your Home Buying Experience with Expertise, Integrity, <br>
+                and Unmatched Personalized Service
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-5">
+
+            <!-- box 1 -->
+            <div class="bg-[#DDC7BB] drop-shadow-2xl rounded-2xl px-6 py-8 space-y-4 flex flex-col shadow-sm">
+
+                <div class="bg-[#FBF5F1] w-[4rem] h-15 p-2 rounded-xl flex items-center justify-center shadow-innerr">
+                    <img src="assests/icons/mappin1.png" class="w-10 h-10 " alt="" >
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-[#2B1B12] text-[18px] font-bold ">
+                        Expert Guidance
+                    </h2>
+
+                    <p class="font-semibold text-sm text-[#4F3527] leading-lagging">
+                        Benefit from our team's <br>
+                        seasoned expertise for a <br>
+                        smooth buying experience
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- box 2 -->
+            <div class="bg-[#DDC7BB] drop-shadow-2xl rounded-2xl px-6 py-8 shadow-sm  space-y-4 flex flex-col">
+
+                <div class="bg-[#FBF5F1] w-[4rem] h-15 p-2 rounded-xl flex items-center justify-center shadow-innerr">
+                    <img src="assests/icons/service.png" class="w-10 h-10 " alt="" >
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-[#2B1B12] text-[18px] font-bold ">
+                        Personalized Service
+                    </h2>
+
+                    <p class="font-semibold text-sm text-[#4F3527] leading-lagging">
+                        Our services adapt to your  <br>
+                        unique needs, making your <br>
+                        journey stress-free
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- box 3 -->
+            <div class="bg-[#DDC7BB] drop-shadow-2xl rounded-2xl px-6 py-8 shadow-sm space-y-4 flex flex-col">
+
+                <div class="bg-[#FBF5F1] w-[4rem] h-15 p-2 rounded-xl flex items-center justify-center shadow-innerr">
+                    <img src="assests/icons/document.png" class="w-10 h-10 " alt="" >
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-[#2B1B12] text-[18px] font-bold ">
+                        Transparent Process
+                    </h2>
+
+                    <p class="font-semibold text-sm text-[#4F3527] leading-lagging">
+                        Stay informed with our <br>
+                        clear and honest approach <br>
+                        to buying your home
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- box 4 -->
+            <div class="bg-[#DDC7BB] drop-shadow-2xl rounded-2xl px-6 py-10 shadow-sm space-y-4 flex flex-col">
+
+                <div class="bg-[#FBF5F1] w-[4rem] h-15 p-2 rounded-xl flex items-center justify-center shadow-innerr">
+                    <img src="assests/icons/mappin1.png" class="w-10 h-10 " alt="" >
+                </div>
+
+                <div class="space-y-3">
+                    <h2 class="text-[#2B1B12] text-[18px] font-bold ">
+                        Expert Guidance
+                    </h2>
+
+                    <p class="font-semibold text-sm text-[#4F3527] leading-lagging">
+                        Benefit from our team's <br>
+                        seasoned expertise for a <br>
+                        smooth buying experience
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="px-5 md:px-20 py-10 md:py-20">
+
+        <h2 class="text-4xl font-extrabold text-[#2B1B12] text-center mb-7">
+            Our Popular Residences
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 lg:gap-8">
+
+            <!-- box 1 -->
+            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-[1.02] duration-500">
+                <img src="assests/images/Group11.png" alt="" class="min-w-full">
+
+                <div class="px-4 py-3 space-y-4">
+                    <h2 class="text-sm text-[#2B1B12] font-bold ">
+                        <i class="fa-solid fa-location-dot" style="color: #2b1b12;"></i>
+                        San Francisco, California
+                    </h2>
+
+                    <div class="flex justify-start gap-10 items-center">
+                        <div class="flex gap-2 items-center">
+                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
+                                <img src="assests/icons/rooms.png" alt="">
+                            </div>
+                            <p class="text-[#4F3527] font-semibold text-sm">4 Rooms</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
+                                <img src="assests/icons/size.png" alt="" >
+                            </div>
+                            <p class="text-[#4F3527] font-semibold text-sm">3,500 sq ft</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <button class="flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
+                            Sign up
+                        </button>
+
+                        <p class="font-bold text-[#4F3527] text-sm">$2,500,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box 2 -->
+            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-[1.02] duration-500">
+                <img src="assests/images/Group12.png" alt="" class="min-w-full">
+
+                <div class="px-4 py-3 space-y-4">
+                    <h2 class="text-sm text-[#2B1B12] font-bold ">
+                        <i class="fa-solid fa-location-dot" style="color: #2b1b12;"></i>
+                        Beverly Hills, California
+                    </h2>
+
+                    <div class="flex justify-start gap-10 items-center">
+                        <div class="flex gap-2 items-center">
+                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
+                                <img src="assests/icons/rooms.png" alt="">
+                            </div>
+                            <p class="text-[#4F3527] font-semibold text-sm">3 Rooms</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
+                                <img src="assests/icons/size.png" alt="" >
+                            </div>
+                            <p class="text-[#4F3527] font-semibold text-sm">1,500 sq ft</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <button class="flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
+                            Sign up
+                        </button>
+
+                        <p class="font-bold text-[#4F3527] text-sm">$850,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box 3 -->
+            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-[1.02] duration-500">
+                <img src="assests/images/Group13.png" alt="" class="min-w-full">
+
+                <div class="px-4 py-3 space-y-4">
+                    <h2 class="text-sm text-[#2B1B12] font-bold ">
+                        <i class="fa-solid fa-location-dot" style="color: #2b1b12;"></i>
+                        Palo Alto, California
+                    </h2>
+
+                    <div class="flex justify-start gap-10 items-center">
+                        <div class="flex gap-2 items-center">
+                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
+                                <img src="assests/icons/rooms.png" alt="">
+                            </div>
+                            <p class="text-[#4F3527] font-semibold text-sm">6 Rooms</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
+                                <img src="assests/icons/size.png" alt="" >
+                            </div>
+                            <p class="text-[#4F3527] font-semibold text-sm">4,000 sq ft</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <button class="flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
+                            Sign up
+                        </button>
+
+                        <p class="font-bold text-[#4F3527] text-sm">$3,700,000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section 5 -->
+    <section class="bg-[#FEF7F2] px-5 md:px-20 py-10 md:py-20">
+        <h2 class="text-center text-[#2B1B12] font-extrabold text-4xl mb-7">
+            What People Say <br> About Dwello
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 lg:gap-8 mb-5">
+            <!-- box1 -->
+            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md">
+                <img src="assests/images/Maskgroup1.png" alt="" class="min-w-full">
+
+                <div class="px-4 py-3 space-y-4">
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center gap-3">
+                            <img src="assests/icons/avatar1.png" alt="" class="w-10 h-10">
+                            <div>
+                                <h2 class="text-[#2B1B12] font-bold text-[19px]">
+                                    Sarah Nguyen <br>
+                                </h2>
+                                <p class="text-sm">San Francisco</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center text-sm mt-4 px-1 bg-[#FFFFFF] rounded-[2px]">
+                            <i class="fa-solid fa-star" style="color: #ffc71e;"></i> 
+                            <span>5.0</span>
+                        </div>
+                    </div>
+
+                    <p class="text-[#4F3527] text-sm font-semibold leading-lagging">
+                        Dwello truly cares about their clients. 
+                        They listened to my needs and
+                        preferences and helped me find the
+                        perfect home in the Bay Area. Their 
+                        professionalism and attention to detail 
+                        are unmatched.
+                    </p>
+                </div>
+            </div>
+
+            <!-- box 2 -->
+            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md">
+                <img src="assests/images/Maskgroup2.png" alt="" class="min-w-full">
+
+                <div class="px-4 py-3 space-y-4">
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center gap-3">
+                            <img src="assests/icons/avatar2.png" alt="" class="w-10 h-10">
+                            <div>
+                                <h2 class="text-[#2B1B12] font-bold text-[19px]">
+                                    Michael Rodriguez <br>
+                                </h2>
+                                <p class="text-sm">San Diego</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center text-sm mt-4 px-2 bg-[#FFFFFF] rounded-[2px]">
+                            <i class="fa-solid fa-star" style="color: #ffc71e;"></i> 
+                            <span>4.5</span>
+                        </div>
+                    </div>
+
+                    <p class="text-[#4F3527] text-sm font-semibold leading-lagging">
+                        I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!
+                    </p>
+                </div>
+            </div>
+
+            <!-- box 3 -->
+            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md ">
+                <img src="assests/images/Maskgroup3.png" alt="" class="min-w-full">
+
+                <div class="px-4 py-3 space-y-4">
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center gap-3">
+                            <img src="assests/icons/avatar3.png" alt="" class="w-10 h-10">
+                            <div>
+                                <h2 class="text-[#2B1B12] font-bold text-[19px]">
+                                    Emily Johnson <br>
+                                </h2>
+                                <p class="text-sm">Los Angeles</p>
+                            </div>
+                        </div>
+
+                        <div class="flex text-sm items-center mt-4 px-2 bg-[#FFFFFF] rounded-[2px]">
+                            <i class="fa-solid fa-star" style="color: #ffc71e;"></i> 
+                            <span>5.0</span>
+                        </div>
+                    </div>
+
+                    <p class="text-[#4F3527] text-sm font-semibold leading-lagging">
+                        Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="flex justify-center items-center gap-3 ">
+            <button class="w-14 h-14 bg-[#2B1B12] rounded-full p-1 hover:scale-105 transition transform ">
+                    <i class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+                </button>
+                <button  class="w-14 h-14 bg-[#2B1B12] rounded-full p-1 hover:scale-105 transition transform ">
+                    <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+                </button>
+        </div>
+    </section>
+
+    <!-- section 6 -->
+    <section class="px-5 md:px-20 py-10 md:py-20">
+        <h2 class="text-center text-4xl font-extrabold text-[#2B1B12] mb-4 tracking-wide">
+            Do You Have Any Questions? <br>Get Help From Us
+        </h2>
+
+        <div class="flex justify-center items-center gap-12 max-x-4xl mx-auto mb-10">
+            <p class="flex items-center gap-2 text-[#543E32] font-medium text-sm">
+                <i class="fa-regular fa-circle-check" style="color: #4f3527;"></i>
+                Chat live with our support team
+            </p>
+
+            <p class="flex items-center gap-2 text-[#543E32] font-medium text-sm">
+                <i class="fa-regular fa-circle-check" style="color: #4f3527;"></i>
+                Browse our FAQ
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <div class="relative w-full max-w-md">
+                    <span class="absolute left-5 top-1/2 -translate-y-1/2 text-[#2D1B14]/60">
+                        <i class="fa-solid fa-envelope" style="color: #2b1b12;"></i>
+                    </span>
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email address..." 
+                        class="w-full bg-[#DDC7BB] border-none py-3 pl-14 pr-6 rounded-xl text-[#2D1B14] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
+                    >
+                </div>
+                
+                <button class="w-full md:w-auto bg-[#2D1B14] text-white px-9 py-3 rounded-xl font-bold text-lg hover:bg-black hover:scale-105 duration-500 transition-all shadow-lg active:scale-95">
+                    Submit
+                </button>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#DDC7BB] p-8 md:py-10 lg:py-20 md:px-[8rem]">
+        <div class="flex flex-col lg:flex-row justify-between gap-5 md:mb-10">
+            <div class="space-y-4 mb-3">
+                <h2 class="flex text-[30px] gap-2">
+                    <img src="assests/icons/logo2.png" alt="" class="">
+                </h2>
+                <p class="text-sm text-[#4F3527] font-medium tracking-wide ">
+                    Bringing you closer to your <br>
+                    dream home, one <br>
+                    click at a time.
+                </p>              
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-7 lg:gap-20">
+                <!-- div 1 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] text-[#2B1B12] font-bold mb-5">
+                        About
+                    </h4>
+                    <p class="space-y-4 flex flex-col">
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Our Story</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Careers</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Our Team</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Resources</a></span>
+                    </p>
+                </div>
+
+                <!-- div 2 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] text-[#2B1B12] font-bold mb-5">
+                        Support
+                    </h4>
+                    <p class="space-y-4 flex flex-col">
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">FAQ</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Contact Us</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Help Center</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Terms of Service</a></span>
+                    </p>
+                </div>
+
+                <!-- div 3 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] text-[#2B1B12] font-bold mb-5">
+                        Find Us
+                    </h4>
+                    <p class="space-y-4 flex flex-col">
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Events</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Locations</a></span>
+                        <span class="text-[#4F3527] font-bold text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Newsletter</a></span>
+                    </p>
+                </div>
+
+                <!-- div 4 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] text-[#2B1B12] font-bold mb-5">
+                        Our Socials
+                    </h4>
+                    <p class="space-y-4 flex flex-col">
+                        <span class="text-[#4F3527] font-bold text-sm hover:text-white hover:font-bold transition-all flex items-center"><a href="#">
+                            <i class="fa-brands fa-instagram " style="color: #4f3527;"></i>
+                            Instagram
+                        </a></span>
+                        <span class="text-[#4F3527] font-bold text-sm hover:text-white hover:font-bold transition-all flex items-center"><a href="#">
+                            <i class="fa-brands fa-square-facebook" style="color: #4f3527;"></i>
+                            Facebook
+                        </a></span>
+                        <span class="text-[#4F3527] font-bold text-sm hover:text-white hover:font-bold transition-all flex items-center"><a href="#">
+                            <i class="fa-brands fa-square-x-twitter" style="color: #4f3527;"></i>
+                            Twitter
+                        </a></span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
