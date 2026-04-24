@@ -118,22 +118,43 @@
       </button>
 
       <!-- Continue with Apple -->
-      <button class="flex items-center gap-3 bg-[#FEF7F2] border border-[#2B1B12] bg-white hover:bg-[#4F3527] rounded-full px-6 py-3 text-sm font-medium text-[#4F3527] hover:text-[#FEF7F2] transition-all duration-200 w-full max-w-[260px] justify-center shadow-sm hover:shadow-md">
-        <!-- Apple Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5">
-          <path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
-        </svg>
-        Continue with Facebook
-      </button>
+      <a href="/auth/facebook">
+        <button class="flex items-center gap-3 bg-[#FEF7F2] border border-[#2B1B12] bg-white hover:bg-[#4F3527] rounded-full px-6 py-3 text-sm font-medium text-[#4F3527] hover:text-[#FEF7F2] transition-all duration-200 w-full max-w-[260px] justify-center shadow-sm hover:shadow-md">
+          <!-- Apple Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5">
+            <path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+          </svg>
+          Continue with Facebook
+        </button>
+      </a>
 
       <p class="text-sm text-[#4F3527]">
           Don't have an account?
-          <a href="#" class="underline text-[#2B1B12] font-medium hover:text-[#4F3527] transition-colors">Sign Up</a>
+          <a href="./signin.html" class="underline text-[#2B1B12] font-medium hover:text-[#4F3527] transition-colors">Sign Up</a>
         </p>
 
     </div>
 
 </div>
+
+
+
+<div class="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#2B1B12] border-t border-default ">
+    <div class=" h-full max-w-lg mx-auto font-medium flex gap-10 items-center justify-center ">
+      <a href="./signin.html">
+        <button type="button" class="inline-flex flex-col items-center  justify-center px-5 hover:bg-neutral-secondary-medium group">
+            <i class="fa-solid fa-user-plus" style="color: #fef7f2;"></i>
+            <span class="text-sm text-[#fef7f2] text-body group-hover:border-b-2 p-1 group-hover:border-[#fef7f2] duration-200 transition-all">Sign in</span>
+        </button>
+      </a>
+
+        <button type="button" class="inline-flex flex-col items-center  justify-center px-5 hover:bg-neutral-secondary-medium group">
+            <i class="fa-solid fa-right-to-bracket" style="color: #fef7f2;"></i>
+            <span class="text-sm text-[#fef7f2] text-body border-b-2 p-1 border-[#fef7f2]">Log in</span>
+        </button>
+    </div>
+</div>
+
 
 </body>
 </html>
