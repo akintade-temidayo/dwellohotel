@@ -39,33 +39,32 @@
         </nav>
 
         <!-- sign in/login -->
-        <div class="flex justify-center items-center space-x-5  lg:flex">
+        <div class="flex justify-center items-center space-x-5 lg:space-x-12  lg:flex">
 
             <button class="hover:scale-105"><img src="assests/icons/search.png" alt="" class="h-4 w-4"></button>
 
             <button class="hover:scale-105"><img src="assests/icons/user.png" alt=""  class="h-4 w-4"></button>
-
-            <div class="flex md:flex-col lg:flex-row justify-center items-center gap-1">
-                <div class="bg-[#2B1B12] px-6 py-2 text-[#FFFFFF] rounded-xl text-sm shadow-lg hover:text-[#808080] hover:bg-[#EEF2FD] hover:font-bold transition hidden lg:block">
-                    <a href="./form/signin.html">
-                        Sign up 
-                    </a>
-                </div>
-
-            <div class="bg-[#2B1B12] px-6 py-2 text-[#FFFFFF] rounded-xl text-sm shadow-lg hover:text-[#808080] hover:bg-[#EEF2FD] hover:font-bold transition hidden lg:block">
-                <a href="./form/login.html">
-                    Log in
-                </a>
-            </div>
+            
         </div>
+
+        <div class="hidden lg:flex flex items-center justify-center gap-4">
+            <a href="./form/signin.html" class="btn bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">
+                sign up
+            </a>
+            <a href="./form/login.html" class="btn bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">
+                Login
+            </a>
         </div>
 
         <div class="group relative hidden md:flex lg:hidden block">
-                    <button class="bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">☰ Menu</button>
-                    <div class="hidden group-hover:block absolute bg-[#DDC7BB] shadow-lg p-2 w-40 rounded-xl ml-[-5rem] mt-9 z-50 space-y-1">
-                    
-                        <a href="./form/signin.html" class="block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Sign up</a>         
-                        <a href="./form/login.html" class="block p-2  bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Login </a>
+            <button class="auth-link bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">☰ Menu</button>
+            <div class="hidden group-hover:block absolute bg-[#DDC7BB] shadow-lg p-2 w-40 rounded-xl ml-[-5rem] mt-9 z-50 space-y-1">
+                <a href="./form/signin.html" class="auth-link block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">
+                    Sign up
+                </a>         
+                <a href="./form/login.html" class="auth-link block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">
+                    Login
+                </a>
             </div>
         </div>
 
@@ -77,8 +76,8 @@
                         <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Services </a>
                         <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Agents</a>
                         <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Contact </a>
-                        <a href="./form/signin.html" class="block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Sign up</a>         
-                        <a href="./form/login.html" class="block p-2  bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Login </a>
+                        <a href="./form/signin.html" class="auth-link block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Sign up</a>         
+                        <a href="./form/login.html" class="auth-link block p-2  bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Log in </a>
             </div>
         </div>
     </div>
@@ -95,8 +94,7 @@
             </p>
             
             <a href="./form/signin.html">
-                <button class="bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">
-                    Sign up
+                <button class="btn bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">                    Sign up
                 </button>
             </a>
         </div>
@@ -137,7 +135,7 @@
 
     <!-- Sign up button -->
     <a href="./form/signin.html">
-        <button class="bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
+        <button class="btn bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
             Sign up
         </button>
     </a>
@@ -315,9 +313,9 @@
                     </div>
 
                     <div class="flex justify-between items-center">
-                        <button class="flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
+                        <a href="/form/signin.html" class="btn cursor-pointer hover:scale-105 flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
                             Sign up
-                        </button>
+                        </a>
 
                         <p class="font-bold text-[#4F3527] text-sm">$2,500,000</p>
                     </div>
@@ -350,9 +348,9 @@
                     </div>
 
                     <div class="flex justify-between items-center">
-                        <button class="flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
+                        <a href="/form/signin.html" class="btn cursor-pointer hover:scale-105 flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
                             Sign up
-                        </button>
+                        </a>
 
                         <p class="font-bold text-[#4F3527] text-sm">$850,000</p>
                     </div>
@@ -385,9 +383,9 @@
                     </div>
 
                     <div class="flex justify-between items-center">
-                        <button class="flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
+                        <a href="/form/signin.html" class="btn cursor-pointer hover:scale-105 flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
                             Sign up
-                        </button>
+                        </a>
 
                         <p class="font-bold text-[#4F3527] text-sm">$3,700,000</p>
                     </div>
@@ -621,5 +619,6 @@
         </div>
     </footer>
 
+    <script src="./index.js"></script>
 </body>
 </html>

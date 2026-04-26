@@ -16,7 +16,7 @@
 </head>
 <body class="min-h-screen bg-[#FDF6EF] flex items-center justify-center px-4 py-3">
 
-    <div class="bg-[#DDC7BB] overflow-hidden flex flex-col md:flex-row min-h-[520px] shadow-md p-7 rounded-3xl  m-auto ">
+    <div class="bg-[#DDC7BB] border-2 border-[#2B1B12] overflow-hidden flex flex-col md:flex-row min-h-[520px] shadow-md p-7 rounded-3xl  m-auto ">
 
     <div class="flex-1 px-4 md:px-10 py-10">
         <h2 class="text-3xl font-bold text-[#2B1B12] mb-1">
@@ -26,12 +26,14 @@
             Don't have an account? Sign up with your details
         </p>
 
-        <div class="space-y-4 mb-4">
+        <form action="" id="signUpForm">
+            <div class="space-y-4 mb-4">
         <div class="flex flex-col lg:flex-row justify-center items-center gap-3">
             <!-- input 1 -->
             <div class="flex flex-col space-y-1">
                 <label for="input" class="text-sm text-[#4F3527] font-bold">Enter your first name...</label>
                 <input 
+                    id="firstName"
                     type="text" 
                     placeholder="Deo" 
                     class="w-full bg-[#FEF7F2] border border-[#4F3527] px-5 py-3 rounded-2xl text-[#2D1B14] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
@@ -42,6 +44,7 @@
             <div class="flex flex-col space-y-1">
                 <label for="input" class="text-sm text-[#4F3527] font-bold">Enter your last name...</label>
                 <input 
+                id="lastName"
                     type="text" 
                     placeholder="John" 
                     class="w-full bg-[#FEF7F2] border border-[#4F3527] px-5 py-3 rounded-2xl text-[#2D1B14] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
@@ -54,7 +57,8 @@
             <div class="flex flex-col space-y-1">
                 <label for="input" class="text-sm text-[#4F3527] font-bold">Enter your email...</label>
                 <input 
-                    type="email" 
+                    id="email"
+                    type="text" 
                     placeholder="johnDeo@gmail.com" 
                     class="w-full bg-[#FEF7F2] border border-[#4F3527] px-5 py-3 rounded-2xl text-[#2D1B14] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
                 >
@@ -64,9 +68,12 @@
             <div class="flex flex-col space-y-1">
                 <label for="input" class="text-sm text-[#4F3527] font-bold">Enter your Phone No...</label>
                 <input 
+                    id="phoneNumber"
+                    maxlength="11"
+                    min="0"
                     type="tel" 
                     placeholder="08012345678" 
-                    maxlength="11"
+                    
                     class="appearance-none w-full bg-[#FEF7F2] border border-[#4F3527] px-5 py-3 rounded-2xl text-[#2D1B14] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm">
             </div>
         </div>
@@ -74,11 +81,11 @@
             <div class="flex flex-col lg:flex-row justify-center items-center gap-3">
                 <!-- input 3 -->
                 <div class="slide-in flex flex-col space-y-1 mb-4 mb-5">
-            <label class="block text-sm text-sm text-[#4F3527] font-bold">Password</label>
+            <label class="block text-sm text-sm text-[#4F3527] font-bold">Password...</label>
             <div class="relative">
             <input
                 type="password"
-                id="passwordInput"
+                id="password"
                 placeholder="••••••••••"
                 class="form-input w-full bg-[#FEF7F2] border border-[#4F3527] rounded-2xl px-5 py-3 text-sm text-[#2D1B14] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm pr-12"
             />
@@ -97,11 +104,11 @@
 
             <!-- input 4 -->
             <div class="slide-in flex flex-col space-y-1 mb-4 mb-5">
-                <label class="block text-sm text-sm text-[#4F3527] font-bold">Password</label>
+                <label class="block text-sm text-sm text-[#4F3527] font-bold">Confirm Password...</label>
                 <div class="relative">
                 <input
                     type="password"
-                    id="passwordInput"
+                    id="confirmPassword"
                     placeholder="••••••••••"
                     class="form-input w-full bg-[#FEF7F2] border border-[#4F3527] rounded-2xl px-5 py-3 text-sm text-[#2D1B14] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm pr-12"
                 />
@@ -134,13 +141,15 @@
         </label>
         </div>
 
-            <div class="slide-in mb-5">
-                <button class="w-full bg-[#2B1B12] hover:bg-[#4F3527] text-white font-semibold py-3 rounded-full transition-all duration-300 text-sm shadow-md hover:shadow-lg">
-                Sign in
-                </button>
-            </div>
-    </div>
+        <div class="slide-in mb-5">
+            <button id="submitBtn" class="w-full bg-[#2B1B12] hover:bg-[#4F3527] text-white font-semibold py-3 rounded-full transition-all duration-300 text-sm shadow-md hover:shadow-lg">
+            Sign in
+            </button>
+        </div>
+    
+        </form>
         
+    </div>
 
     <div class="hidden md:flex items-center justify-center  px-2">
         <div class="divider h-[70%] border border-[#2B1B12]"></div>
@@ -201,5 +210,6 @@
             </a>
     </div>
 </div>
+<script src="../js-file/signup.js"></script>
 </body>
 </html>
