@@ -94,7 +94,8 @@
             </p>
             
             <a href="./form/signin.html">
-                <button class="btn bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">                    Sign up
+                <button class="btn1 bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">
+                    Sign up
                 </button>
             </a>
         </div>
@@ -110,32 +111,47 @@
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 p-8 rounded-2xl absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20 bg-[#DDC7BB] w-[90%] max-w-6xl">
 
     <!-- div 1 -->
-    <button class="flex items-center justify-between space-x-5 text-[#695346] bg-[#FBF5F1] p-3 rounded-xl w-full">
-        <div>
-            <p class="text-sm text-[#695346] leading-tight">Location</p>
-        </div>
-        <i class="fa-solid fa-location-dot text-[#695346]"></i>
-    </button>
-
+    <div class="relative w-full max-w-md">
+        <span class="absolute right-5 top-1/2 -translate-y-1/2 text-[#2D1B14]/60">
+            <i class="fa-solid fa-location-dot text-[#695346]"></i>
+        </span>
+        <input
+            id="location"
+            type="text" 
+            placeholder="Location" 
+            class="w-full bg-[#FBF5F1] border-none py-3 pl-5 pr-6 rounded-xl text-[#695346] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
+        >
+    </div>
+    
     <!-- div 2 -->
-    <button class="flex items-center justify-between space-x-5 text-[#695346] bg-[#FBF5F1] p-3 rounded-xl w-full">
-        <div>
-            <p class="text-sm text-[#695346] leading-tight">Type</p>
-        </div>
-        <i class="fa-solid fa-house text-[#695346]"></i>
-    </button>
+    <div class="relative w-full max-w-md">
+        <span class="absolute right-5 top-1/2 -translate-y-1/2 text-[#2D1B14]/60">
+            <i class="fa-solid fa-house text-[#695346]"></i>
+        </span>
+        <input 
+            id="type"
+            type="text" 
+            placeholder="Type" 
+            class="w-full bg-[#FBF5F1] border-none py-3 pl-5 pr-6 rounded-xl text-[#695346] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
+        >
+    </div>
 
     <!-- div 3 -->
-    <button class="flex items-center justify-between space-x-5 text-[#695346] bg-[#FBF5F1] p-3 rounded-xl w-full">
-        <div>
-            <p class="text-sm text-[#695346] leading-tight">Price</p>
-        </div>
-        <i class="fa-solid fa-coins text-[#695346]"></i>
-    </button>
+    <div class="relative w-full max-w-md">
+        <span class="absolute right-5 top-1/2 -translate-y-1/2 text-[#2D1B14]/60">
+            <i class="fa-solid fa-coins text-[#695346]"></i>
+        </span>
+        <input 
+            id="price"
+            type="text" 
+            placeholder="Price" 
+            class="w-full bg-[#FBF5F1] border-none py-3 pl-5 pr-6 rounded-xl text-[#695346] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
+        >
+    </div>
 
     <!-- Sign up button -->
     <a href="./form/signin.html">
-        <button class="btn bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
+        <button class="btn1 bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
             Sign up
         </button>
     </a>

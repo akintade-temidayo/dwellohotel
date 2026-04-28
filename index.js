@@ -19,10 +19,17 @@ if (isLoggedIn === 'true') {
 
 } else {
 
-    // Show main buttons
+    // Show main buttons 
     buttons.forEach(btn => btn.style.display = 'block');
 
     // Show dropdown auth links
     authLinks.forEach(link => link.style.display = 'block');
 
 }
+
+
+// searching for input fields
+
+const location = document.getElementById('location');
+const type = document.getElementById('type');
+const price = document.getElementById('price');
