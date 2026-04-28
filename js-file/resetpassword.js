@@ -59,7 +59,7 @@ resetForm.addEventListener('submit', (e) => {
         return alert('Please enter the complete 6-digit OTP');
     }
 
-    // OTP match check — ✅ both converted to string
+    // OTP match check —  both converted to string
     if (enteredOTP.toString() !== savedOTP.toString()) {
         return alert('Incorrect OTP. Please check and try again.');
     }
@@ -98,6 +98,6 @@ resetForm.addEventListener('submit', (e) => {
 
     alert('Password reset successfully! Please log in with your new password.');
 
-    // ✅ Fix 1 — relative path
+    //  Fix 1 — relative path
     window.location.href = './login.html';
 });
