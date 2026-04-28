@@ -55,9 +55,10 @@
                 Login
             </a>
         </div>
+        
 
         <div class="group relative hidden md:flex lg:hidden block">
-            <button class="auth-link bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">☰ Menu</button>
+            <button class="bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">☰ Menu</button>
             <div class="hidden group-hover:block absolute bg-[#DDC7BB] shadow-lg p-2 w-40 rounded-xl ml-[-5rem] mt-9 z-50 space-y-1">
                 <a href="./form/signin.html" class="auth-link block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">
                     Sign up
@@ -80,6 +81,11 @@
                         <a href="./form/login.html" class="auth-link block p-2  bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Log in </a>
             </div>
         </div>
+
+        <!-- Add this next to your sign up/login buttons in the navbar -->
+        <div id="logoutBtn" class="hidden bg-[#2B1B12] px-4 py-2 text-white rounded-xl text-sm cursor-pointer hover:bg-[#4F3527] transition">
+            Log Out
+        </div>
     </div>
 
     <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 md:gap-2 items-center px-8 lg:px-24 py-5">
@@ -94,7 +100,7 @@
             </p>
             
             <a href="./form/signin.html">
-                <button class="btn1 bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">
+                <button class="btn bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">
                     Sign up
                 </button>
             </a>
@@ -151,7 +157,7 @@
 
     <!-- Sign up button -->
     <a href="./form/signin.html">
-        <button class="btn1 bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
+        <button class="btn bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
             Sign up
         </button>
     </a>
@@ -635,6 +641,6 @@
         </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
