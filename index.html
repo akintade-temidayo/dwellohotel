@@ -99,8 +99,8 @@
                 Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision
             </p>
             
-            <a href="./form/signin.html">
-                <button class="btn bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">
+            <a href="./form/signin.html" id="herobtnLink">
+                <button id="heroBtn" class=" bg-[#2D1B14] text-white px-10 py-3 rounded-xl text-lg font-semibold hover:bg-black transition-all shadow-xl">
                     Sign up
                 </button>
             </a>
@@ -149,20 +149,41 @@
         </span>
         <input 
             id="price"
-            type="text" 
+            type="number" 
             placeholder="Price" 
             class="w-full bg-[#FBF5F1] border-none py-3 pl-5 pr-6 rounded-xl text-[#695346] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
         >
     </div>
 
     <!-- Sign up button -->
-    <a href="./form/signin.html">
-        <button class="btn bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
+    <a href="./form/signin.html" id="searchMoreLink">
+        <button id="searchMore" class=" bg-[#2D1B14] text-white py-3 rounded-xl text-sm w-full font-semibold hover:bg-black transition-all shadow-xl">
             Sign up
         </button>
     </a>
 
 </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="px-5 md:px-20 py-10 md:py-20 mt-[3rem] mx-auto">
+
+        <h2 class="text-4xl font-extrabold text-[#2B1B12] text-center mb-7">
+            Our Popular Residences
+        </h2>
+
+        <p id="no-result-property"></p>
+
+        <div id="property-con" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 lg:gap-8">
+            <!-- box 1 --> 
+            <!-- box 2 -->
+            <!-- box 3 -->
+        </div> 
+
+        <a href="./form/signin.html" id="bookNowLink">
+        <button id="bookNow" class="text-[#2B1B12] text-[18px] font-medium underline float-right p-7 tracking-wide hover:font-semibold duration-500 transition-all">
+        </button></a>
+
     </section>
 
     <!-- section2 -->
@@ -277,7 +298,7 @@
             </div>
 
             <!-- box 4 -->
-            <div class="bg-[#DDC7BB] drop-shadow-2xl rounded-2xl px-6 py-10 shadow-sm space-y-4 flex flex-col">
+            <div class="bg-[#DDC7BB] drop-shadow-2xl rounded-2xl px-6 py-8 shadow-sm space-y-4 flex flex-col">
 
                 <div class="bg-[#FBF5F1] w-[4rem] h-15 p-2 rounded-xl flex items-center justify-center shadow-innerr">
                     <img src="assests/icons/mappin1.png" class="w-10 h-10 " alt="" >
@@ -300,123 +321,7 @@
         </div>
     </section>
 
-    <!-- section 4 -->
-    <section class="px-5 md:px-20 py-10 md:py-20">
-
-        <h2 class="text-4xl font-extrabold text-[#2B1B12] text-center mb-7">
-            Our Popular Residences
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 lg:gap-8">
-
-            <!-- box 1 -->
-            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-[1.02] duration-500">
-                <img src="assests/images/Group11.png" alt="" class="min-w-full">
-
-                <div class="px-4 py-3 space-y-4">
-                    <h2 class="text-sm text-[#2B1B12] font-bold ">
-                        <i class="fa-solid fa-location-dot" style="color: #2b1b12;"></i>
-                        San Francisco, California
-                    </h2>
-
-                    <div class="flex justify-start gap-10 items-center">
-                        <div class="flex gap-2 items-center">
-                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
-                                <img src="assests/icons/rooms.png" alt="">
-                            </div>
-                            <p class="text-[#4F3527] font-semibold text-sm">4 Rooms</p>
-                        </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
-                                <img src="assests/icons/size.png" alt="" >
-                            </div>
-                            <p class="text-[#4F3527] font-semibold text-sm">3,500 sq ft</p>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-between items-center">
-                        <a href="/form/signin.html" class="btn cursor-pointer hover:scale-105 flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
-                            Sign up
-                        </a>
-
-                        <p class="font-bold text-[#4F3527] text-sm">$2,500,000</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- box 2 -->
-            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-[1.02] duration-500">
-                <img src="assests/images/Group12.png" alt="" class="min-w-full">
-
-                <div class="px-4 py-3 space-y-4">
-                    <h2 class="text-sm text-[#2B1B12] font-bold ">
-                        <i class="fa-solid fa-location-dot" style="color: #2b1b12;"></i>
-                        Beverly Hills, California
-                    </h2>
-
-                    <div class="flex justify-start gap-10 items-center">
-                        <div class="flex gap-2 items-center">
-                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
-                                <img src="assests/icons/rooms.png" alt="">
-                            </div>
-                            <p class="text-[#4F3527] font-semibold text-sm">3 Rooms</p>
-                        </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
-                                <img src="assests/icons/size.png" alt="" >
-                            </div>
-                            <p class="text-[#4F3527] font-semibold text-sm">1,500 sq ft</p>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-between items-center">
-                        <a href="/form/signin.html" class="btn cursor-pointer hover:scale-105 flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
-                            Sign up
-                        </a>
-
-                        <p class="font-bold text-[#4F3527] text-sm">$850,000</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- box 3 -->
-            <div class="bg-[#DDC7BB] rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-[1.02] duration-500">
-                <img src="assests/images/Group13.png" alt="" class="min-w-full">
-
-                <div class="px-4 py-3 space-y-4">
-                    <h2 class="text-sm text-[#2B1B12] font-bold ">
-                        <i class="fa-solid fa-location-dot" style="color: #2b1b12;"></i>
-                        Palo Alto, California
-                    </h2>
-
-                    <div class="flex justify-start gap-10 items-center">
-                        <div class="flex gap-2 items-center">
-                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
-                                <img src="assests/icons/rooms.png" alt="">
-                            </div>
-                            <p class="text-[#4F3527] font-semibold text-sm">6 Rooms</p>
-                        </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="bg-[#FBF5F1] p-0.5 rounded-[5px]">
-                                <img src="assests/icons/size.png" alt="" >
-                            </div>
-                            <p class="text-[#4F3527] font-semibold text-sm">4,000 sq ft</p>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-between items-center">
-                        <a href="/form/signin.html" class="btn cursor-pointer hover:scale-105 flex items-center bg-[#2D1B14] text-white px-4 py-1 rounded-[7px] text-sm font-medium hover:bg-black transition-all shadow-md">
-                            Sign up
-                        </a>
-
-                        <p class="font-bold text-[#4F3527] text-sm">$3,700,000</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
+    
 
     <!-- section 5 -->
     <section class="bg-[#FEF7F2] px-5 md:px-20 py-10 md:py-20">

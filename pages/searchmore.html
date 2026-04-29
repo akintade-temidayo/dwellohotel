@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search More </title>
+</head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<body class="bg-[#FEF7F2] p-4 md:p-6 mx-auto">
+
+    <a href="/index.html" class="text-[30px] font-extrabold py-7">
+        <i class="fa-solid fa-arrow-left-long" style="color: #2b1b12;"></i>
+    </a>
+
+        <h2 class="mb-2 text-[#2B1B12] text-3xl font-bold tracking-wide mt-7">
+            All Our Featured Properties
+        </h2>
+        <p class="text-[#4F3527] text-sm tracking-wide mb-6 max-w-3xl font-medium">
+            Explore our extensive collection of proprties, each offering unique features and amenities to suit your prefrences...
+        </p>
+
+
+        <div class="sticky top-2 z-20">
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-8 rounded-2xl bg-[#DDC7BB] w-full">
+                <!-- div 1 -->
+                <div class="relative w-full max-w-md">
+                    <span class="absolute right-5 top-1/2 -translate-y-1/2 text-[#2D1B14]/60">
+                        <i class="fa-solid fa-location-dot text-[#695346]"></i>
+                    </span>
+                    <input
+                        id="location"
+                        type="text" 
+                        placeholder="Location" 
+                        class="w-full bg-[#FBF5F1] border-none py-3 pl-5 pr-6 rounded-xl text-[#695346] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
+                    >
+                </div>
+                <!-- div 2 -->
+                <div class="relative w-full max-w-md">
+                    <span class="absolute right-5 top-1/2 -translate-y-1/2 text-[#2D1B14]/60">
+                        <i class="fa-solid fa-house text-[#695346]"></i>
+                    </span>
+                    <input 
+                        id="type"
+                        type="text" 
+                        placeholder="Type" 
+                        class="w-full bg-[#FBF5F1] border-none py-3 pl-5 pr-6 rounded-xl text-[#695346] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
+                    >
+                </div>
+                <!-- div 3 -->
+                <div class="relative w-full max-w-md">
+                    <span class="absolute right-5 top-1/2 -translate-y-1/2 text-[#2D1B14]/60">
+                        <i class="fa-solid fa-coins text-[#695346]"></i>
+                    </span>
+                    <input 
+                        id="price"
+                        type="number" 
+                        placeholder="Price" 
+                        class="w-full bg-[#FBF5F1] border-none py-3 pl-5 pr-6 rounded-xl text-[#695346] placeholder-[#2D1B14]/50 focus:ring-2 focus:ring-[#2D1B14]/20 outline-none transition-all shadow-sm"
+                    >
+                </div>
+        </div>
+    
+        </div>
+        
+    <p id="no-result-property" class="text-[#2D1B14] text-center font-bold my-10 "></p>
+
+
+
+        <div id="property-con" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-5 lg:gap-5 p-4 md:p-7">
+            <!-- box 1 --> 
+            <!-- box 2 -->
+            <!-- box 3 -->
+        </div>
+
+        <p id="no-result-property" class="text-center text-[#2B1B12] text-lg font-medium tracking-wide mt-10B"></p>
+
+        <div id="modalOverlay" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center px-4">
+    
+            <div id="modalBox" class="bg-[#FEF7F2] rounded-[2rem] shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto relative border-2 border-[#2B1B12] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] drop-shadow-2xl">
+
+                <!-- Close Button — top right corner -->
+                <button 
+                    id="modalCloseBtn"
+                    class="absolute top-4 right-4 w-8 h-8 bg-[#2B1B12] text-white rounded-full flex items-center justify-center hover:scale-105 hover:bg-[#4F3527] transition-all duration-200 z-10"
+                >
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+
+                <!-- Property Image -->
+                <img id="modalImage" src="" alt="" class="w-full h-56 object-cover rounded-t-3xl">
+
+                <!-- Modal Content -->
+                <div class="p-6 space-y-4">
+
+                    <!-- Property Title -->
+                    <h2 id="modalTitle" class="text-[#2B1B12] font-bold text-lg leading-snug pr-6"></h2>
+
+                    <!-- Address -->
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-location-dot text-[#4F3527] mt-1 text-sm"></i>
+                        <p id="modalAddress" class="text-[#4F3527] text-sm font-medium"></p>
+                    </div>
+
+                    <hr class="border-[#DDC7BB]">
+
+                    <!-- Owner Details -->
+                    <div class="bg-[#DDC7BB] rounded-2xl p-4 space-y-2">
+                        <p class="text-[#2B1B12] font-bold text-sm mb-3">Owner Details</p>
+
+                        <!-- Owner Name -->
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user text-[#4F3527] text-xs w-4"></i>
+                            <p id="modalOwnerName" class="text-[#4F3527] text-sm font-medium"></p>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-[#4F3527] text-xs w-4"></i>
+                            <a id="modalPhone" href="" class="text-[#4F3527] text-sm font-medium hover:text-[#2B1B12] transition-colors"></a>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-[#4F3527] text-xs w-4"></i>
+                            <a id="modalEmail" href="" class="text-[#4F3527] text-sm font-medium hover:text-[#2B1B12] transition-colors"></a>
+                        </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="flex justify-between items-center bg-[#2B1B12] rounded-2xl px-4 py-3">
+                        <p class="text-white text-sm font-medium">Price</p>
+                        <p id="modalPrice" class="text-white font-bold text-base"></p>
+                    </div>
+
+                    <!-- Description Summary -->
+                    <div>
+                        <p class="text-[#2B1B12] font-bold text-sm mb-2">About this Property</p>
+                        <p id="modalDescription" class="text-[#4F3527] text-sm font-medium "></p>
+                    </div>
+
+                    <!-- Contact Button -->
+                    <a id="modalContactLink" href="">
+                        <button class="w-full bg-[#2B1B12] text-white py-3 rounded-xl font-semibold hover:bg-[#4F3527] transition-all duration-300 text-sm mt-2">
+                            Contact Owner
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    <script src="../js-file/sm.js"></script>
+</body>
+</html>
