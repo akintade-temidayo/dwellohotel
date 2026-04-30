@@ -54,6 +54,11 @@
             <a href="./form/login.html" class="btn bg-[#2B1B12] px-4 py-2 md:px-4 md:py-2 cursor-pointer rounded-xl  hover:bg-[#808080] text-white transition">
                 Login
             </a>
+            <button 
+            id="logoutBtnDesktop"
+                class="hidden bg-red-800 px-4 py-2 text-white rounded-xl text-sm cursor-pointer hover:bg-red-600 transition font-semibold">
+                Log Out
+            </button>
         </div>
         
 
@@ -66,6 +71,12 @@
                 <a href="./form/login.html" class="auth-link block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">
                     Login
                 </a>
+
+                <button 
+                    id="logoutBtnTablet"
+                    class="hidden w-full text-left p-2 bg-red-800 text-white font-semibold hover:bg-red-600 transition rounded-xl text-sm">
+                    Log Out
+                </button>
             </div>
         </div>
 
@@ -79,13 +90,19 @@
                         <a href="#" class="block p-2 hover:bg-[#695346] hover:text-white transition rounded-xl font-medium">Contact </a>
                         <a href="./form/signin.html" class="auth-link block p-2 bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Sign up</a>         
                         <a href="./form/login.html" class="auth-link block p-2  bg-[#695346] text-[#EEF2FD] font-semibold hover:bg-[#808080] hover:text-white transition rounded-xl">Log in </a>
+
+                    <button 
+                        id="logoutBtn" 
+                        class="hidden w-full text-left p-2 bg-red-800 text-white font-semibold hover:bg-red-600 transition rounded-xl text-sm">
+                        Log Out
+                    </button>
             </div>
         </div>
 
         <!-- Add this next to your sign up/login buttons in the navbar -->
-        <div id="logoutBtn" class="hidden bg-[#2B1B12] px-4 py-2 text-white rounded-xl text-sm cursor-pointer hover:bg-[#4F3527] transition">
+        <!-- <div id="logoutBtn" class="hidden bg-[#2B1B12] px-4 py-2 text-white rounded-xl text-sm cursor-pointer hover:bg-[#4F3527] transition">
             Log Out
-        </div>
+        </div> -->
     </div>
 
     <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 md:gap-2 items-center px-8 lg:px-24 py-5">

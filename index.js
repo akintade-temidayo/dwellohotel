@@ -566,6 +566,9 @@ const properties =  [
 
 const isLoggedIn   = localStorage.getItem('isLoggedIn');
 const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+const logoutBtn        = document.getElementById('logoutBtn');        // mobile
+const logoutBtnTablet  = document.getElementById('logoutBtnTablet'); // tablet
+const logoutBtnDesktop = document.getElementById('logoutBtnDesktop'); // desktop 
 
 const buttons   = Array.from(document.getElementsByClassName('btn'));
 const authLinks = Array.from(document.getElementsByClassName('auth-link'));
@@ -613,15 +616,50 @@ if(isLoggedIn === 'true' && loggedInUser){
     searchMore.textContent = "Sign Up to Search More Properties..."
 }
 
-// Logout
-const logoutBtn = document.getElementById('logoutBtn');
-if (logoutBtn) {
-    logoutBtn.addEventListener('click', () => {
-        localStorage.removeItem('isLoggedIn');
-        localStorage.removeItem('loggedInUser');
-        window.location.reload();
-    });
+if (isLoggedIn === 'true' && loggedInUser) {
+
+    buttons.forEach(btn => btn.style.display = 'none');
+    authLinks.forEach(link => link.style.display = 'none');
+
+    // Show all three logout buttons
+    if (logoutBtn)        logoutBtn.classList.remove('hidden');
+    if (logoutBtnTablet)  logoutBtnTablet.classList.remove('hidden');
+    if (logoutBtnDesktop) logoutBtnDesktop.classList.remove('hidden'); // ✅
+
+} else {
+
+    buttons.forEach(btn => btn.style.display = '');
+    authLinks.forEach(link => link.style.display = '');
+
+    // Hide all three logout buttons
+    if (logoutBtn)        logoutBtn.classList.add('hidden');
+    if (logoutBtnTablet)  logoutBtnTablet.classList.add('hidden');
+    if (logoutBtnDesktop) logoutBtnDesktop.classList.add('hidden'); // ✅
 }
+
+// One logout function handles all three buttons
+function handleLogout() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('loggedInUser');
+    window.location.reload();
+}
+
+if (logoutBtn)        logoutBtn.addEventListener('click', handleLogout);
+if (logoutBtnTablet)  logoutBtnTablet.addEventListener('click', handleLogout);
+if (logoutBtnDesktop) logoutBtnDesktop.addEventListener('click', handleLogout); // ✅
+
+
+
+
+// Logout
+// const logoutBtn = document.getElementById('logoutBtn');
+// if (logoutBtn) {
+//     logoutBtn.addEventListener('click', () => {
+//         localStorage.removeItem('isLoggedIn');
+//         localStorage.removeItem('loggedInUser');
+//         window.location.reload();
+//     });
+// }
 
 // searching for input fields
 
